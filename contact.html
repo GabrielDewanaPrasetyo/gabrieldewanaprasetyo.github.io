@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-contact.css">
+    <link rel="shortcut icon" href="pict/icon.ico" type="image/x-icon">
+    <link rel="icon" href="pict/icon.ico" type="image/x-icon">
+    <title>Contact Page</title>
+</head>
+<body>
+    <div id="navbar">
+        <a href="index.html" id="logo">Nigma Music</a>
+        <div id="login">
+          <a href="login-page.html">Login</a>
+          <a href="signup.html">Sign Up</a>
+        </div>
+        <div id="navbar-right">
+            <a class="active" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="spesifikasi.html">Spesification</a>
+            <a href="contact.html">Service Center</a>
+        </div>
+      </div>
+    <div class="container">
+      <br><br><br><br><br>
+        <div style="text-align:center">
+          <h2>Contact Us</h2>
+          <p>Silahkan hubungi Kami, atau tinggalkan pesan:</p>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="pict/service1.png" style="width:100%">
+          </div>
+          <div class="column">
+            <form action="contact.html#">
+              <label for="fname" class="label-nama">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="First name..">
+              <label for="lname" class="label-nama">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Last name..">
+              <label for="lkampus" class="label-nama">University Address</label>
+              <input type="text" id="lkampus" name="lkampus" placeholder="University address..">
+              <label for="lemail" class="label-nama">E-mail</label>
+              <input type="text" id="lemail" name="lastname" placeholder="Email..">
+              <label for="lnomor" class="label-nama">Phone Number</label>
+              <input type="text" id="lnomor" name="nomor" placeholder="+62..">
+              <label for="alamat" class="label-nama">Address</label>
+              <textarea id="alamat" name="alamat" placeholder="Your Address.." style="height:170px"></textarea>
+              <label for="subject" class="label-nama">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+    </div>
+
+    <div class="footer" id="footer">
+        Copyright &copy; 2022 Bagus Surya Mahendra
+    </div>
+
+    <! –– Javascript ––>
+    <script>
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction(){
+          if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
+              document.getElementById("navbar").style.padding = "20px 30px";
+              document.getElementById("logo").style.fontSize = "30px";
+          }else{
+              document.getElementById("navbar").style.padding = "30px 30px";
+              document.getElementById("logo").style.fontSize = "35px";
+          }
+      }
+    </script>
+</body>
+</html>

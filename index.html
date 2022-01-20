@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-index.css">
+    <link rel="shortcut icon" href="pict/icon.ico" type="image/x-icon">
+    <link rel="icon" href="pict/icon.ico" type="image/x-icon">
+    <title>Home Page</title>
+</head>
+<body>
+    <div id="navbar">
+        <a href="index.html" id="logo">Nigma Music</a>
+        <div id="login">
+          <a href="login-page.html">Login</a>
+          <a href="signup.html">Sign Up</a>
+        </div>
+        <div id="navbar-right">
+            <a class="active" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="spesifikasi.html">Spesification</a>
+            <a href="contact.html">Service Center</a>
+        </div>
+    </div>
+    <div class="container">
+      <div class="img1">
+        <img src="pict/music1.jpg" alt="picture1" width="560" height="350" style="border-radius: 5%;">
+      </div>
+      <div class="text1">
+          <h1>Permudah pengalaman <br>mendengarkan musik<br>favorit kamu</h1>
+          <p>Ucapkan selamat tinggal dengan musik berbayar<br>dengan mengganti platform musik kamu<br>dengan Nigma Music.</p>
+      </div>
+      
+    </div>
+    <div class="container">
+      <div class="img2">
+        <img src="pict/music2.jpg" alt="student2" width="560" height="350" style="border-radius: 5%;">
+      </div>
+      <div class="text2">
+          <h1>Dengarkan musik gratis<br>untuk kamu yang<br>tidak mau ribet.</h1>
+          <p>Nikmati kemudahan mendengarkan musik<br>dimanapun dan kapanpun.</p>
+      </div>
+    </div>
+
+    <div class="middle-text">
+      <h1>Solusi Mendengarkan Musik Gratis dan Tanpa Ribet.</h1>
+    </div>
+
+    <div class="middle-cont">
+      <div class="like">
+        <img src="logo/cent.png" alt="like" class="img-logo">
+        <h2>Free Music</h2>
+        <p style="font-size: 15px;">Cukup dengan registrasi pada Nigma Music<br> bisa mendengarkan musik dengan gratis.</p>
+      </div>
+      <div class="send">
+        <img src="logo/music.png" alt="send" class="img-logo">
+        <h2>Dimanapun dan Kapanpun</h2>
+        <p style="font-size: 15px;">Dengan sistem streaming kamu dapat <br> mendengarkan musik yang kamu suka<br>dimana saja dan kapan saja.</p>
+      </div>
+      <div class="cs">
+        <img src="logo/service.png" alt="cs" class="img-logo">
+        <h2>Customer Service</h2>
+        <p style="font-size: 15px;">Customer Service 24/7 yang siap<br>membantumu kapan saja.</p>
+      </div>
+    </div>
+
+    <div class="bot-cont1">
+      <h1>Dengarkan musik <br>favorit kamu </h1>
+      <p>Dengan Nigma Music raskan mudahnya mendengarkan<br>musik gratis dan tanpa ribet.</p>
+      <a href="login-page.html" class="btn-mulai">Mulai Sekarang</a>
+    </div>
+
+    <div class="footer" id="footer">
+        Copyright &copy; 2022 Gabriel Dewana Prasetyo
+    </div>
+    <! –– Javascript ––>
+    <script>
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction(){
+          if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
+              document.getElementById("navbar").style.padding = "20px 30px";
+              document.getElementById("logo").style.fontSize = "30px";
+          }else{
+              document.getElementById("navbar").style.padding = "30px 30px";
+              document.getElementById("logo").style.fontSize = "35px";
+          }
+      }
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-spesifikasi.css">
+    <link rel="shortcut icon" href="pict/icon.ico" type="image/x-icon">
+    <link rel="icon" href="pict/icon.ico" type="image/x-icon">
+    <title>Product Page</title>
+</head>
+<body>
+    <div id="navbar">
+        <a href="index.html" id="logo">Nigma Music</a>
+        <div id="login">
+          <a href="login-page.html">Login</a>
+          <a href="signup.html">Sign Up</a>
+        </div>
+        <div id="navbar-right">
+            <a class="active" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="spesifikasi.html">Spesification</a>
+            <a href="contact.html">Service Center</a>
+        </div>
+    </div>
+    
+    <div class="produk">
+        <h1>Our Spesification</h1>
+        <div class="row">
+            <div class="column">
+                <img src="logo/cent.png" class="img-produk">
+                <h2>Gratis</h2>
+                <p>Kamu bisa mendengarkan musik<br>tanpa harus mengeluarkan uang.</p>
+            </div>
+            <div class="column">
+                <img src="logo/radio.png" class="img-produk">
+                <h2>Radio</h2>
+                <p>Radio 24/7 yang siap<br>menyiarkan lagu kapanpun.</p>
+            </div>
+            <div class="column">
+                <img src="logo/service.png"" class="img-produk">
+                <h2>24/7 Service Center</h2>
+                <p>Petugas service center yang siap<br>menjawab pertanyaan kamu.</p>
+            </div>
+        <div class="row1">
+            <div class="column1">
+                <img src="logo/android.png" class="img-produk">
+                <h2>Android</h2>
+                <p>Kompatibel dengan sistem<br>perangkat android.</p>
+            </div>
+            <div class="column">
+                <img src="logo/apple.png"" class="img-produk">
+                <h2>Ios</h2>
+                <p>Kompatibel dengan sistem<br>perangkat apple.</p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer" id="footer">
+        Copyright &copy; 2022 Gabriel Dewana Prasetyo
+    </div>
+
+    <! –– Javascript ––>
+    <script>
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction(){
+          if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
+              document.getElementById("navbar").style.padding = "20px 30px";
+              document.getElementById("logo").style.fontSize = "30px";
+          }else{
+              document.getElementById("navbar").style.padding = "30px 30px";
+              document.getElementById("logo").style.fontSize = "35px";
+          }
+      }
+    </script>
+</body>
+</html>

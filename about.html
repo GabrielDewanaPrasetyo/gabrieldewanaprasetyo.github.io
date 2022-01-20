@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-about.css">
+    <link rel="shortcut icon" href="pict/icon.ico" type="image/x-icon">
+    <link rel="icon" href="pict/icon.ico" type="image/x-icon">
+    <title>About Page</title>
+</head>
+<body>
+    <div id="navbar">
+        <a href="index.html" id="logo">Nigma Music</a>
+        <div id="login">
+          <a href="login-page.html">Login</a>
+          <a href="signup.html">Sign Up</a>
+        </div>
+        <div id="navbar-right">
+            <a class="active" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="spesifikasi.html">Spesification</a>
+            <a href="contact.html">Service Center</a>
+        </div>
+    </div>
+    
+    <div class="toptext">
+        <h1>Solusi Mendengarkan Musik Gratis dan Tanpa Ribet</h1>
+        <p>Memberikan layanan untuk mendengarkan musik secara gratis dimanapun dan kapanpun.</p>
+    </div>
+    <br><br>
+    
+    <div class="container">
+        <div class="imgmisi">
+            <img src="pict/misi.jpg" alt="student" width="560" height="350" style="border-radius: 5%;">
+        </div>
+        <div class="misi-text">
+            <h1>Visi dan Misi Kami</h1>
+            <p>Memberikan layanan yang dapat digunakan untuk mendengarkan musik secara gratis, yang brtujuan untuk menarik perhatian kaum muda maupun tua untuk mulai mendengarkan musik tanpa harus mengeluarkan biaya. 
+            </p>
+        </div>
+    </div>
+    <br><br>
+    
+    <div class="bot-cont1">
+        <h1>Dengarkan musik <br>favorit kamu </h1>
+        <p>Dengan Nigma Music raskan mudahnya mendengarkan<br>musik gratis dan tanpa ribet.</p>
+        <a href="login-page.html" class="btn-mulai">Mulai Sekarang</a>
+      </div>
+
+    <div class="footer" id="footer">
+        Copyright &copy; 2022 Gabriel Dewana Prasetyo
+    </div>
+
+    <! –– Javascript ––>
+    <script>
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction(){
+          if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
+              document.getElementById("navbar").style.padding = "20px 30px";
+              document.getElementById("logo").style.fontSize = "30px";
+          }else{
+              document.getElementById("navbar").style.padding = "30px 30px";
+              document.getElementById("logo").style.fontSize = "35px";
+          }
+      }
+    </script>
+</body>
+</html>
